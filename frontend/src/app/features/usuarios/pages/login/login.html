@@ -1,0 +1,25 @@
+<div>
+
+  <h1>AniBook</h1>
+
+  <input
+    [(ngModel)]="login"
+    placeholder="Usuário">
+
+  <input
+    type="password"
+    [(ngModel)]="senha"
+    placeholder="Senha">
+
+  <button
+    (click)="entrar()">
+
+    Entrar
+
+  </button>
+
+  @if (erro) {
+    <p>{{ erro }}</p>
+  }
+
+</div>
